@@ -1,0 +1,7 @@
+# Ignore all HTML files
+*.html
+
+# Ignore HTML directories
+html/
+html-iframes/
+html-block-&inline-elements/
