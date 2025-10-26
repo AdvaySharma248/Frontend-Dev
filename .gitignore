@@ -1,8 +1,7 @@
 # Ignore all HTML files
 *.html
 
-# But don't ignore HTML files in html-iframes directory
-!html-iframes/*.html
-
-# Ignore the html-block-&inline-elements directory
+# Ignore all HTML directories
+html/
+html-iframes/
 html-block-&inline-elements/
