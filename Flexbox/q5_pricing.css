@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Pricing Section */
+.pricing-section {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.pricing-section h1 {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Pricing Container - Flexbox */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Pricing Card Styles */
+.pricing-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    flex: 1;
+    max-width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Featured Card - Highlighted */
+.pricing-card.featured {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card.featured h2,
+.pricing-card.featured .price {
+    color: white;
+}
+
+.pricing-card.featured .features li {
+    color: white;
+}
+
+.pricing-card.featured .btn {
+    background-color: white;
+    color: #667eea;
+}
+
+.pricing-card.featured .btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Badge */
+.badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Card Title */
+.pricing-card h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Price */
+.price {
+    margin-bottom: 30px;
+}
+
+.currency {
+    font-size: 24px;
+    color: #7f8c8d;
+    vertical-align: top;
+}
+
+.amount {
+    font-size: 56px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.period {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.pricing-card.featured .currency,
+.pricing-card.featured .amount,
+.pricing-card.featured .period {
+    color: white;
+}
+
+/* Features List */
+.features {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.features li {
+    padding: 12px 0;
+    color: #555;
+    font-size: 16px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card.featured .features li {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Button */
+.btn {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #5568d3;
+    transform: scale(1.05);
+}
+
+/* Hover Effect - Rise Up */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.1) translateY(-10px);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation Delays for Staggered Effect */
+.pricing-card:nth-child(1) {
+    animation-delay: 0.1s;
+    animation-fill-mode: backwards;
+}
+
+.pricing-card:nth-child(2) {
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+
+.pricing-card:nth-child(3) {
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+}
+
+/* Responsive Design - Stack Vertically Below 750px */
+@media (max-width: 750px) {
+    .pricing-section h1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .pricing-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .pricing-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .pricing-card.featured:hover {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-section h1 {
+        font-size: 28px;
+    }
+
+    .pricing-card {
+        padding: 30px 20px;
+    }
+
+    .pricing-card h2 {
+        font-size: 24px;
+    }
+
+    .amount {
+        font-size: 48px;
+    }
+
+    .features li {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}

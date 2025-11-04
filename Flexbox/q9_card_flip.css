@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container - Centered with Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+/* Card Wrapper */
+.card {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Card Inner - Contains Front and Back */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Flip Effect on Hover */
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Common Styles for Front and Back */
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Front Side Styles */
+.card-front {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-front img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-front h2 {
+    padding: 30px;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+/* Back Side Styles */
+.card-back {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.card-back h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.card-back p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: white;
+    color: #667eea;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 350px;
+        height: 450px;
+    }
+
+    .card-front img {
+        height: 250px;
+    }
+
+    .card-front h2 {
+        font-size: 24px;
+        padding: 25px;
+    }
+
+    .card-back {
+        padding: 30px;
+    }
+
+    .card-back h2 {
+        font-size: 24px;
+    }
+
+    .card-back p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .card-front img {
+        height: 200px;
+    }
+
+    .card-front h2 {
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    .card-back {
+        padding: 25px;
+    }
+
+    .card-back h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .card-back p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
