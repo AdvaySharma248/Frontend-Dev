@@ -1,0 +1,159 @@
+/* CSS for Filter Cards with Animation */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #333;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Fade-in animation for the entire page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Cards container */
+.cards-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cards-container h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Cards flex container */
+.cards-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Profile cards */
+.profile-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect - lift the card */
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Profile images */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    transition: filter 0.3s ease;
+}
+
+/* Filter classes */
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+/* Remove filters on hover */
+.profile-card:hover .grayscale {
+    filter: grayscale(0);
+}
+
+.profile-card:hover .sepia {
+    filter: sepia(0);
+}
+
+.profile-card:hover .blur {
+    filter: blur(0);
+}
+
+/* Profile info */
+.profile-info h3 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 1.3em;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.profile-info p:first-of-type {
+    font-weight: bold;
+    color: #6a11cb;
+}
+
+/* Responsive design */
+@media screen and (max-width: 800px) {
+    .cards-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+}

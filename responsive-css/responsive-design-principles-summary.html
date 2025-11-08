@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles Summary</title>
+    <link rel="stylesheet" href="responsive-design-principles-summary.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Design Principles</h1>
+    </header>
+    
+    <main>
+        <section class="principles-container">
+            <h2>Core Principles of Responsive Design</h2>
+            <div class="principles-grid">
+                <div class="principle-box">
+                    <h3>Fluid Layouts</h3>
+                    <p>Fluid layouts use relative units like percentages instead of fixed units like pixels, allowing elements to resize smoothly across different screen sizes.</p>
+                    <code>width: 100%;<br>max-width: 1200px;<br>padding: 2%;</code>
+                </div>
+                
+                <div class="principle-box">
+                    <h3>Flexible Media</h3>
+                    <p>Flexible media ensures that images, videos, and other media elements scale appropriately within their containing elements.</p>
+                    <code>img {<br>&nbsp;&nbsp;max-width: 100%;<br>&nbsp;&nbsp;height: auto;<br>}</code>
+                </div>
+                
+                <div class="principle-box">
+                    <h3>Breakpoints</h3>
+                    <p>Breakpoints are screen widths that trigger changes in the layout through media queries, allowing for optimized designs at different screen sizes.</p>
+                    <code>@media (max-width: 768px) {<br>&nbsp;&nbsp;/* tablet styles */<br>}<br><br>@media (max-width: 480px) {<br>&nbsp;&nbsp;/* mobile styles */<br>}</code>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Responsive Design Principles Summary</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* CSS for Combined Responsive Web Demo */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e17055 0%, #e84393 100%);
+    color: #333;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Fade-in animation for the entire page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Header styles */
+.main-header {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #fdcb6e;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    background: rgba(253, 203, 110, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Main content */
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Demo container */
+.demo-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.demo-container h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 3px solid #e17055;
+    padding-bottom: 15px;
+}
+
+/* Demo grid */
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Gallery section */
+.gallery-section h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #74b9ff;
+    padding-bottom: 10px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Explanation section */
+.explanation-section h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #00b894;
+    padding-bottom: 10px;
+}
+
+.explanation-section p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Cheat sheet preview */
+.cheat-sheet-preview h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #fdcb6e;
+    padding-bottom: 10px;
+}
+
+.cheat-sheet-preview ul {
+    color: #555;
+    padding-left: 20px;
+}
+
+.cheat-sheet-preview li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 700px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .demo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    
+    .demo-container {
+        padding: 20px;
+    }
+    
+    .gallery-images {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+}
+
+/* Focus states for accessibility */
+.main-nav a:focus {
+    outline: 2px solid #f1c40f;
+    outline-offset: 2px;
+}

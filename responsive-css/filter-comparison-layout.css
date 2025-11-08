@@ -1,0 +1,139 @@
+/* CSS for Filter Comparison Layout */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Comparison container */
+.comparison-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.comparison-container h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Comparison flex container */
+.comparison-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+/* Image containers */
+.image-container {
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Images */
+.image-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: filter 0.5s ease;
+}
+
+/* Original images */
+.original-image {
+    filter: none;
+}
+
+/* Filtered images */
+.filtered-image {
+    filter: brightness(1.5);
+}
+
+.contrast-image {
+    filter: contrast(200%);
+}
+
+/* Hover effect - remove filter */
+.image-container:hover .filtered-image {
+    filter: brightness(1);
+}
+
+.image-container:hover .contrast-image {
+    filter: contrast(100%);
+}
+
+/* Captions */
+.caption {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1em;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 700px) {
+    .comparison-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-container {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    .image-container img {
+        height: 250px;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    
+    .comparison-container {
+        padding: 20px;
+    }
+}

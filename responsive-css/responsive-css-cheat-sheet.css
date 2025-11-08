@@ -1,0 +1,150 @@
+/* CSS for Responsive CSS Cheat Sheet */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00cec9 0%, #0984e3 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Cheat sheet container */
+.cheat-sheet-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cheat-sheet-container h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Cheat sheet grid */
+.cheat-sheet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Concept boxes */
+.concept-box {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.concept-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    color: white;
+}
+
+.concept-box h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #00cec9;
+    padding-bottom: 10px;
+    color: #2c3e50;
+}
+
+.concept-box:hover h3 {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.concept-box p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.concept-box:hover p {
+    color: white;
+}
+
+/* Code examples */
+code {
+    display: block;
+    background: #2c3e50;
+    color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    margin-top: 10px;
+    white-space: pre;
+}
+
+.concept-box:hover code {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 700px) {
+    .cheat-sheet-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .concept-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    
+    .cheat-sheet-container {
+        padding: 20px;
+    }
+    
+    /* Stack heading and code vertically on small screens */
+    .concept-box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    code {
+        margin-top: auto;
+    }
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+}

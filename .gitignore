@@ -1,0 +1,9 @@
+# Ignore all files
+*
+
+# But don't ignore .gitignore itself
+!.gitignore
+
+# Don't ignore the responsive-css folder and its contents
+!responsive-css/
+!responsive-css/**

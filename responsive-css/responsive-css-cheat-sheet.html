@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="responsive-css-cheat-sheet.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive CSS Cheat Sheet</h1>
+    </header>
+    
+    <main>
+        <section class="cheat-sheet-container">
+            <h2>Key Responsive CSS Concepts</h2>
+            <div class="cheat-sheet-grid">
+                <div class="concept-box">
+                    <h3>Filters</h3>
+                    <p>CSS filters allow you to apply graphical effects like blur or color shifting to elements.</p>
+                    <code>filter: blur(5px);<br>filter: grayscale(100%);<br>filter: sepia(100%);</code>
+                </div>
+                
+                <div class="concept-box">
+                    <h3>Media Queries</h3>
+                    <p>Media queries allow you to apply CSS styles depending on device general type or characteristics.</p>
+                    <code>@media screen and (max-width: 600px) {<br>&nbsp;&nbsp;/* styles */<br>}</code>
+                </div>
+                
+                <div class="concept-box">
+                    <h3>Responsive Design</h3>
+                    <p>Responsive design ensures web pages render well on a variety of devices and window or screen sizes.</p>
+                    <code>flex-wrap: wrap;<br>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code>
+                </div>
+                
+                <div class="concept-box">
+                    <h3>Typography</h3>
+                    <p>Responsive typography scales font sizes based on viewport width for better readability.</p>
+                    <code>font-size: clamp(1rem, 2.5vw, 1.5rem);<br>line-height: 1.4;</code>
+                </div>
+                
+                <div class="concept-box">
+                    <h3>Flexbox</h3>
+                    <p>Flexbox is a layout model that allows elements to align and distribute space within a container.</p>
+                    <code>display: flex;<br>justify-content: space-between;<br>flex-wrap: wrap;</code>
+                </div>
+                
+                <div class="concept-box">
+                    <h3>CSS Grid</h3>
+                    <p>CSS Grid is a two-dimensional layout system for the web.</p>
+                    <code>display: grid;<br>grid-template-columns: 1fr 1fr 1fr;<br>gap: 20px;</code>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Responsive CSS Cheat Sheet</p>
+    </footer>
+</body>
+</html>
