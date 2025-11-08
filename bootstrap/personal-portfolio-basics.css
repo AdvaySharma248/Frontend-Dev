@@ -1,0 +1,62 @@
+/* Custom CSS for Personal Portfolio Basics */
+
+/* Profile image styling */
+img.img-fluid.rounded-circle {
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img.img-fluid.rounded-circle:hover {
+    transform: scale(1.05);
+}
+
+/* Header styling */
+header.bg-primary {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%) !important;
+}
+
+/* Buttons styling */
+.btn-primary {
+    background-color: #6a11cb;
+    border-color: #6a11cb;
+}
+
+.btn-primary:hover {
+    background-color: #2575fc;
+    border-color: #2575fc;
+}
+
+/* Form container styling */
+.bg-light.p-5.rounded {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements styling */
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+}
+
+.form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 0 0.25rem rgba(106, 17, 203, 0.25);
+}
+
+/* Footer styling */
+footer.bg-dark {
+    background-color: #212529 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn-lg {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .me-3 {
+        margin-right: 0 !important;
+    }
+}

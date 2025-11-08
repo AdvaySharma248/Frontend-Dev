@@ -1,0 +1,167 @@
+/* Custom CSS for Blog Pagination & Pager */
+
+/* Header styling */
+header.bg-dark {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a237e 100%) !important;
+}
+
+header h1.display-4 {
+    font-weight: 700;
+}
+
+/* Blog post styling */
+.blog-post {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog post image styling */
+.img-fluid.rounded-start {
+    object-fit: cover;
+}
+
+/* Card body styling */
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.card-text.text-muted {
+    font-size: 0.85rem;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Pagination styling */
+.pagination {
+    margin-bottom: 0;
+}
+
+.page-link {
+    color: #3498db;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    color: #fff;
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.page-item.active .page-link {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+/* Pager styling */
+.pager {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.pager .btn-outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pager .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Footer styling */
+footer.bg-dark {
+    background-color: #1a1a2e !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+    }
+    
+    .img-fluid.rounded-start {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+    
+    .pager .btn-outline-secondary {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .pager {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pager .previous, .pager .next {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    header h1.display-4 {
+        font-size: 1.8rem;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .btn-primary, .pager .btn-outline-secondary {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}

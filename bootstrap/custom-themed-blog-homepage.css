@@ -1,0 +1,143 @@
+/* Custom CSS for Custom Themed Blog Homepage */
+
+/* Custom theme variables */
+:root {
+    --bs-primary: #6a11cb;
+    --bs-secondary: #2575fc;
+    --bs-font-sans-serif: 'Open Sans', sans-serif;
+    --bs-font-serif: 'Merriweather', serif;
+}
+
+/* Body styling */
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: #f8f9fa;
+}
+
+/* Header styling */
+header.bg-primary {
+    background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%) !important;
+}
+
+header h1 {
+    font-family: var(--bs-font-serif);
+    font-weight: 700;
+}
+
+header p.lead {
+    font-family: var(--bs-font-sans-serif);
+}
+
+/* Navigation styling */
+.navbar.bg-secondary {
+    background-color: var(--bs-secondary) !important;
+}
+
+.nav-link {
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffc107 !important;
+}
+
+/* Blog card styling */
+.blog-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: var(--bs-font-serif);
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5a0db9;
+    border-color: #5a0db9;
+    transform: translateY(-2px);
+}
+
+/* Footer styling */
+footer.bg-dark {
+    background-color: #1a1a2e !important;
+}
+
+footer h5 {
+    color: #6a11cb;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6a11cb;
+}
+
+footer address {
+    font-style: normal;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .blog-card {
+        margin-bottom: 20px;
+    }
+    
+    footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+    }
+}

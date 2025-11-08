@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications Dashboard</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="notifications-dashboard.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Notifications Dashboard</h1>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <span class="badge bg-primary fs-6">5 New Notifications</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">Recent Notifications</h2>
+                
+                <!-- Success alert -->
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Success!</strong> Your profile has been updated successfully.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                
+                <!-- Info alert -->
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    <strong>Information:</strong> New features will be available next week. Check back soon!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                
+                <!-- Danger alert -->
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Warning!</strong> Your subscription will expire in 3 days. Please renew to continue enjoying our services.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                
+                <!-- Dismissible alert -->
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Reminder:</strong> You have a meeting scheduled for tomorrow at 10:00 AM.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Summary well -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card summary-well">
+                    <div class="card-body">
+                        <h3 class="card-title">Notification Summary</h3>
+                        <p class="card-text">You have received 12 notifications this week. 3 require your immediate attention.</p>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75% Read</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Notification cards -->
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title text-success">System Update</h4>
+                        <p class="card-text">The system has been successfully updated to version 2.5. All services are running normally.</p>
+                        <small class="text-muted">2 hours ago</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title text-info">New Message</h4>
+                        <p class="card-text">You have received a new message from John Doe regarding the project timeline.</p>
+                        <small class="text-muted">5 hours ago</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Task Reminder</h4>
+                        <p class="card-text">Reminder: Submit your quarterly report by Friday, 5:00 PM.</p>
+                        <small class="text-muted">1 day ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2023 Notifications Dashboard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS CDN (required for dismissible alerts) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
