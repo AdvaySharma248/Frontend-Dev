@@ -1,0 +1,190 @@
+/* CSS for Question 5: Advanced CSS Selectors */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #11998e;
+    padding-bottom: 10px;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Attribute Selectors */
+/* Select all input elements with type="text" */
+input[type="text"] {
+    border: 2px solid #3498db;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Select all input elements with type="email" */
+input[type="email"] {
+    border: 2px solid #9b59b6;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Select all input elements with type="password" */
+input[type="password"] {
+    border: 2px solid #e74c3c;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Select all input elements with type="submit" */
+input[type="submit"] {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Select all anchor elements with href starting with "https" */
+a[href^="https"] {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[href^="https"]:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-classes */
+/* Style list items on hover */
+.item-list li:hover {
+    background-color: #f1c40f;
+    cursor: pointer;
+}
+
+/* Style the first list item */
+.item-list li:first-child {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style the last list item */
+.item-list li:last-child {
+    background-color: #9b59b6;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style every even list item */
+.item-list li:nth-child(even) {
+    background-color: #bdc3c7;
+}
+
+/* Style every third list item */
+.item-list li:nth-child(3n) {
+    background-color: #1abc9c;
+    color: white;
+}
+
+/* Style when input is focused */
+input:focus {
+    outline: 2px solid #f1c40f;
+    background-color: #fff9c4;
+}
+
+/* Pseudo-elements */
+/* Add content before each paragraph in pseudo-element-demo */
+.pseudo-element-demo p::before {
+    content: "» ";
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Add content after each paragraph in pseudo-element-demo */
+.pseudo-element-demo p::after {
+    content: " «";
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Style the first letter of the quote */
+.quote::first-letter {
+    font-size: 2em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Style the first line of the quote */
+.quote::first-line {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Combinators */
+/* Descendant combinator - selects all p elements inside parent */
+.parent p {
+    color: #3498db;
+    padding: 5px;
+}
+
+/* Child combinator - selects p elements that are direct children of child */
+.child > p {
+    background-color: #f1c40f;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Adjacent sibling combinator - selects p element immediately after sibling */
+.sibling + p {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+}
+
+/* General sibling combinator - selects all p elements that are siblings of combinator-section */
+.combinator-section ~ p {
+    color: #9b59b6;
+}
+
+footer {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+}

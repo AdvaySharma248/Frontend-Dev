@@ -1,0 +1,152 @@
+/* CSS for Question 7: Typography and Text Styling */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+}
+
+main {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Article styling */
+.typography-article {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Main article heading */
+.typography-article > h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+/* First letter of the first paragraph */
+.intro::first-letter {
+    font-size: 3em;
+    color: #ff7e5f;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin: 0.1em 0.1em 0 0;
+}
+
+/* First line of the first paragraph */
+.intro::first-line {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* All headings */
+h2 {
+    color: #e74c3c;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    margin-top: 1.5em;
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #3498db;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+    text-align: justify;
+    letter-spacing: 0.3px;
+}
+
+/* Strong element styling */
+strong {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Emphasis element styling */
+em {
+    color: #3498db;
+    font-style: italic;
+}
+
+/* Mark element styling */
+mark {
+    background-color: #f1c40f;
+    color: #2c3e50;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Blockquote styling */
+blockquote {
+    border-left: 4px solid #ff7e5f;
+    margin: 2em 0;
+    padding: 1em 2em;
+    font-style: italic;
+    color: #555;
+    background-color: #f8f8f8;
+    border-radius: 0 5px 5px 0;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 3em;
+    color: #ff7e5f;
+    line-height: 0.1em;
+    margin-right: 0.2em;
+    vertical-align: -0.4em;
+}
+
+blockquote::after {
+    content: '"';
+    font-size: 3em;
+    color: #ff7e5f;
+    line-height: 0.1em;
+    margin-left: 0.2em;
+    vertical-align: -0.4em;
+}
+
+/* Specific heading styling */
+.typography-article > h1::first-letter {
+    color: #ff7e5f;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+}
