@@ -1,0 +1,117 @@
+/* CSS for Question 3: Gradient Background Webpage */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+section {
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Linear gradient section */
+.linear-gradient-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linear-gradient-section p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Radial gradient section */
+.radial-gradient-section {
+    background: radial-gradient(circle, #f6d365 0%, #fda085 100%);
+    color: #333;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.radial-gradient-section p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fixed gradient section with parallax effect */
+.fixed-gradient-section {
+    background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fixed-gradient-section p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.spacer {
+    height: 200px;
+}
+
+footer {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 20px;
+}

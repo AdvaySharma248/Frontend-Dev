@@ -4,6 +4,6 @@
 # But don't ignore .gitignore itself
 !.gitignore
 
-# Don't ignore the css-model folder
+# Don't ignore the css-model folder and its contents
 !css-model/
 !css-model/**

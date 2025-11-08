@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2: Height and Width Practice Layout</title>
+    <link rel="stylesheet" href="q2-height-width.css">
+</head>
+<body>
+    <header>
+        <h1>Height and Width Practice Layout</h1>
+    </header>
+    
+    <main>
+        <section class="boxes-container">
+            <h2>Boxes with Different Heights and Widths</h2>
+            <div class="flex-container">
+                <div class="box box1">
+                    <p>Box 1: Fixed width (300px) and height (150px)</p>
+                </div>
+                <div class="box box2">
+                    <p>Box 2: Percentage width (50%) and viewport height (20vh)</p>
+                </div>
+                <div class="box box3">
+                    <p>Box 3: EM-based width (20em) and height (10em)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="min-max-container">
+            <h2>Min/Max Properties and Overflow</h2>
+            <div class="flex-container">
+                <div class="box min-height-box">
+                    <p>This box has a minimum height of 100px. The content is short, but the box maintains its minimum height.</p>
+                </div>
+                <div class="box max-width-box">
+                    <p>This box has a maximum width of 200px. Even though the container is wider, this box will not exceed its maximum width. This is a longer text to demonstrate how the max-width property works with overflow.</p>
+                </div>
+                <div class="box overflow-box">
+                    <p>This box demonstrates overflow properties. It has a fixed height of 80px but contains more text than can fit. The overflow is set to auto, which adds scrollbars when needed. This is additional text to ensure overflow occurs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Height and Width Practice Layout</p>
+    </footer>
+</body>
+</html>
