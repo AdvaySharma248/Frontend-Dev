@@ -1,0 +1,219 @@
+/* CSS for Question 2: Tooltip Demonstration */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Explanation section */
+.explanation {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.explanation h2 {
+    color: #2c3e50;
+    text-align: left;
+}
+
+.explanation p {
+    font-size: 1.1em;
+    color: #555;
+    text-align: left;
+}
+
+/* Tooltip container */
+.tooltip-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip-container h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Flex container for tooltips */
+.tooltip-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+/* Tooltip wrapper */
+.tooltip-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Tooltip target */
+.tooltip-target {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tooltip-target:hover {
+    background: #2980b9;
+}
+
+/* Large tooltip target */
+.tooltip-target.large {
+    padding: 15px 25px;
+    font-size: 1.1em;
+}
+
+/* Tooltip button */
+.tooltip-button {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tooltip-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Tooltip text */
+.tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Tooltip arrow */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2c3e50 transparent transparent transparent;
+}
+
+/* Bottom tooltip */
+.tooltip-bottom {
+    top: 125%;
+    bottom: auto;
+}
+
+.tooltip-bottom::after {
+    top: -10px;
+    border-color: transparent transparent #2c3e50 transparent;
+}
+
+/* Left tooltip */
+.tooltip-left {
+    top: -5px;
+    right: 125%;
+    left: auto;
+    bottom: auto;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.tooltip-left::after {
+    top: 10px;
+    left: 100%;
+    margin-left: 0;
+    border-color: transparent transparent transparent #2c3e50;
+}
+
+/* Right tooltip */
+.tooltip-right {
+    top: -5px;
+    left: 125%;
+    bottom: auto;
+    margin-left: 10px;
+}
+
+.tooltip-right::after {
+    top: 10px;
+    left: -10px;
+    margin-left: 0;
+    border-color: transparent #2c3e50 transparent transparent;
+}
+
+/* Large tooltip */
+.large-tooltip {
+    width: 200px;
+    margin-left: -100px;
+    white-space: normal;
+}
+
+/* Show tooltip on hover */
+.tooltip-wrapper:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+}

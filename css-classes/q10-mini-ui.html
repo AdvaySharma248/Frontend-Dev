@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10: Mini User Interface Layout</title>
+    <link rel="stylesheet" href="q10-mini-ui.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>My Mini App</h1>
+            <nav class="header-nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="main-card">
+            <h2>Welcome to Our Mini App</h2>
+            <p>This is a compact demonstration of a complete user interface with consistent styling and responsive design.</p>
+            
+            <div class="card-content">
+                <div class="image-section">
+                    <img src="https://picsum.photos/300/200?random=7" alt="Sample Image">
+                </div>
+                
+                <div class="form-section">
+                    <h3>User Information</h3>
+                    <form class="mini-form">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" class="form-input" placeholder="Enter your username">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interests">Interests</label>
+                            <select id="interests" class="form-select">
+                                <option value="">Select an interest</option>
+                                <option value="tech">Technology</option>
+                                <option value="design">Design</option>
+                                <option value="business">Business</option>
+                                <option value="art">Art</option>
+                            </select>
+                        </div>
+                        
+                        <div class="button-group">
+                            <button type="submit" class="form-button primary">Submit</button>
+                            <button type="reset" class="form-button secondary">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <p>&copy; 2023 Mini App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

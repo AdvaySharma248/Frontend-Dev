@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8: Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="q8-box-sizing.css">
+</head>
+<body>
+    <header>
+        <h1>Box-Sizing Comparison</h1>
+    </header>
+    
+    <main>
+        <section class="explanation">
+            <h2>Understanding Box-Sizing</h2>
+            <p>The box-sizing property defines how the total width and height of an element is calculated. It's crucial for creating predictable layouts.</p>
+        </section>
+        
+        <section class="comparison-container">
+            <h2>Box-Sizing Comparison</h2>
+            
+            <div class="comparison-flex">
+                <div class="box-example default-box">
+                    <h3>Default Box-Sizing (Content-Box)</h3>
+                    <div class="box-content">
+                        <p><strong>Width:</strong> 200px</p>
+                        <p><strong>Padding:</strong> 20px</p>
+                        <p><strong>Border:</strong> 10px</p>
+                        <p><strong>Total Width:</strong> 260px</p>
+                    </div>
+                </div>
+                
+                <div class="box-example border-box">
+                    <h3>Border-Box</h3>
+                    <div class="box-content">
+                        <p><strong>Width:</strong> 200px</p>
+                        <p><strong>Padding:</strong> 20px</p>
+                        <p><strong>Border:</strong> 10px</p>
+                        <p><strong>Total Width:</strong> 200px</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="explanation-section">
+                <h3>Key Differences</h3>
+                <div class="difference-container">
+                    <div class="difference-box">
+                        <h4>Content-Box (Default)</h4>
+                        <p>Width and height apply only to the content area. Padding and border are added to the specified dimensions.</p>
+                    </div>
+                    
+                    <div class="difference-box">
+                        <h4>Border-Box</h4>
+                        <p>Width and height include content, padding, and border. This makes sizing more intuitive and predictable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Box-Sizing Comparison Page</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* CSS for Question 5: Styled Button Collection */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff7675 0%, #fd79a8 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ff7675;
+    padding-bottom: 5px;
+}
+
+/* Explanation section */
+.explanation {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.explanation h2 {
+    color: #2c3e50;
+    text-align: left;
+}
+
+.explanation p {
+    font-size: 1.1em;
+    color: #555;
+    text-align: left;
+}
+
+/* Buttons container */
+.buttons-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttons-container h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Button sections */
+.button-section {
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Base button styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for all buttons */
+.btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Active effect for all buttons */
+.btn:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect for all buttons */
+.btn:focus {
+    outline: 2px solid #f1c40f;
+    outline-offset: 2px;
+}
+
+/* Disabled buttons */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Primary buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+}
+
+/* Secondary buttons */
+.btn-secondary {
+    background: linear-gradient(135deg, #ff7675 0%, #fd79a8 100%);
+    color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background: linear-gradient(135deg, #fd79a8 0%, #ff7675 100%);
+}
+
+/* Outline buttons */
+.btn-outline {
+    background: transparent;
+    color: #6a11cb;
+    border: 2px solid #6a11cb;
+}
+
+.btn-outline:hover:not(:disabled) {
+    background: #6a11cb;
+    color: white;
+}
+
+/* Success buttons */
+.btn-success {
+    background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+    color: white;
+}
+
+.btn-success:hover:not(:disabled) {
+    background: linear-gradient(135deg, #00cec9 0%, #00b894 100%);
+}
+
+/* Warning buttons */
+.btn-warning {
+    background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
+    color: white;
+}
+
+.btn-warning:hover:not(:disabled) {
+    background: linear-gradient(135deg, #e17055 0%, #fdcb6e 100%);
+}
+
+/* Danger buttons */
+.btn-danger {
+    background: linear-gradient(135deg, #e17055 0%, #e84393 100%);
+    color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+    background: linear-gradient(135deg, #e84393 0%, #e17055 100%);
+}
+
+/* Info buttons */
+.btn-info {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    color: white;
+}
+
+.btn-info:hover:not(:disabled) {
+    background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
+}
+
+/* Button sizes */
+.btn-small {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 18px;
+}
+
+/* Rounded buttons */
+.btn-rounded {
+    border-radius: 30px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+}

@@ -3,3 +3,7 @@
 
 # But don't ignore .gitignore itself
 !.gitignore
+
+# Don't ignore the css-classes folder and its contents
+!css-classes/
+!css-classes/**

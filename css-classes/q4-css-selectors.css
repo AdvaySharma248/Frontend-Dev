@@ -1,0 +1,237 @@
+/* CSS for Question 4: CSS Selectors Practice */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #00b894;
+    padding-bottom: 5px;
+}
+
+/* Explanation section */
+.explanation {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.explanation h2 {
+    color: #2c3e50;
+    text-align: left;
+}
+
+.explanation p {
+    font-size: 1.1em;
+    color: #555;
+    text-align: left;
+}
+
+/* Selectors container */
+.selectors-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.selectors-container h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Selector sections */
+.selector-section {
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Element selectors */
+/* Selects all p elements */
+p {
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Selects all div elements */
+div {
+    margin: 10px 0;
+}
+
+.element-example {
+    padding: 15px;
+    border-left: 4px solid #6a11cb;
+}
+
+/* Class selectors */
+/* Selects all elements with class "class-example" */
+.class-example {
+    padding: 15px;
+    background-color: #74b9ff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ID selectors */
+/* Selects the element with id "id-example" */
+#id-example {
+    padding: 15px;
+    background-color: #e17055;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Attribute selectors */
+/* Selects all input elements */
+input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Selects input elements with type="text" */
+input[type="text"] {
+    border-color: #0984e3;
+}
+
+/* Selects input elements with type="email" */
+input[type="email"] {
+    border-color: #00b894;
+}
+
+/* Selects input elements with type="password" */
+input[type="password"] {
+    border-color: #e17055;
+}
+
+/* Selects anchor elements with href starting with "https" */
+a[href^="https"] {
+    color: #6a11cb;
+    font-weight: bold;
+}
+
+/* Selects anchor elements with href starting with "/" */
+a[href^="/"] {
+    color: #00b894;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Combinators */
+/* Descendant combinator - selects all p elements inside parent */
+.parent p {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fdcb6e;
+    color: #2c3e50;
+}
+
+/* Child combinator - selects p elements that are direct children of child */
+.child > p {
+    background-color: #e17055;
+    color: white;
+    font-weight: bold;
+}
+
+/* Adjacent sibling combinator - selects p element immediately after sibling */
+.sibling + p {
+    background-color: #e84393;
+    color: white;
+    font-weight: bold;
+}
+
+/* General sibling combinator - selects all p elements that are siblings of selector-section */
+.selector-section ~ p {
+    background-color: #0984e3;
+    color: white;
+}
+
+/* Parent container */
+.parent {
+    padding: 15px;
+    background-color: #f1f2f6;
+    border-radius: 5px;
+}
+
+/* Child container */
+.child {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #dfe4ea;
+    border-radius: 5px;
+}
+
+/* Grandchild container */
+.grandchild {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ced6e0;
+    border-radius: 5px;
+}
+
+/* Sibling container */
+.sibling {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #a4b0be;
+    border-radius: 5px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+}
