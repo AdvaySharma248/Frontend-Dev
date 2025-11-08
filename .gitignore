@@ -3,3 +3,7 @@
 
 # But don't ignore .gitignore itself
 !.gitignore
+
+# Don't ignore the css-model folder
+!css-model/
+!css-model/**
