@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8: Box Model Exploration Page</title>
+    <link rel="stylesheet" href="q8-box-model.css">
+</head>
+<body>
+    <header>
+        <h1>Box Model Exploration</h1>
+    </header>
+    
+    <main>
+        <section class="explanation">
+            <h2>Understanding the CSS Box Model</h2>
+            <p>The CSS box model is a fundamental concept that describes how elements are structured and sized on a web page. Every element is essentially a rectangular box with four distinct layers.</p>
+        </section>
+        
+        <section class="box-model-demo">
+            <h2>Visual Representation of Box Model Layers</h2>
+            <div class="container">
+                <div class="box-model-example default-box">
+                    <div class="content">
+                        Content
+                        <div class="layer-label">Content</div>
+                    </div>
+                    <div class="layer-label">Padding</div>
+                    <div class="layer-label">Border</div>
+                    <div class="layer-label">Margin</div>
+                </div>
+                
+                <div class="box-model-example border-box">
+                    <div class="content">
+                        Content
+                        <div class="layer-label">Content</div>
+                    </div>
+                    <div class="layer-label">Padding</div>
+                    <div class="layer-label">Border</div>
+                    <div class="layer-label">Margin</div>
+                </div>
+            </div>
+            
+            <div class="comparison">
+                <div class="box default-box-sample">
+                    <h3>Default Box Model</h3>
+                    <p>Width = Content width only</p>
+                    <p>Total width = content + padding + border + margin</p>
+                </div>
+                
+                <div class="box border-box-sample">
+                    <h3>Border-Box Model</h3>
+                    <p>Width = Content + Padding + Border</p>
+                    <p>Margin is additional</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Box Model Exploration Page</p>
+    </footer>
+</body>
+</html>

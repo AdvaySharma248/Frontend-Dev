@@ -1,0 +1,227 @@
+/* CSS for Question 8: Box Model Exploration Page */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Explanation section */
+.explanation {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.explanation h2 {
+    color: #2c3e50;
+    text-align: left;
+}
+
+.explanation p {
+    font-size: 1.1em;
+    color: #555;
+    text-align: left;
+}
+
+/* Container for flexbox centering */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 40px 0;
+}
+
+/* Box model examples */
+.box-model-example {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Default box model */
+.default-box {
+    /* Margin */
+    margin: 30px;
+    background-color: #ffeaa7;
+    
+    /* Border */
+    border: 20px solid #e17055;
+    
+    /* Padding */
+    padding: 25px;
+    
+    /* Content */
+    background-clip: content-box;
+    background-color: #0984e3;
+    color: white;
+}
+
+/* Border-box model */
+.border-box {
+    box-sizing: border-box;
+    
+    /* Margin */
+    margin: 30px;
+    background-color: #fdcb6e;
+    
+    /* Border */
+    border: 20px solid #e84393;
+    
+    /* Padding */
+    padding: 25px;
+    
+    /* Content */
+    background-clip: content-box;
+    background-color: #00b894;
+    color: white;
+}
+
+/* Content area */
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Layer labels */
+.layer-label {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+/* Position labels for each layer */
+.default-box .content .layer-label {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.default-box > .layer-label:nth-child(2) {
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.default-box > .layer-label:nth-child(3) {
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.default-box > .layer-label:nth-child(4) {
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.border-box .content .layer-label {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.border-box > .layer-label:nth-child(2) {
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.border-box > .layer-label:nth-child(3) {
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.border-box > .layer-label:nth-child(4) {
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Comparison section */
+.comparison {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 2px solid #74b9ff;
+    padding-bottom: 10px;
+}
+
+.box p {
+    color: #555;
+}
+
+.default-box-sample {
+    border-left: 5px solid #0984e3;
+}
+
+.border-box-sample {
+    border-left: 5px solid #00b894;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+}
