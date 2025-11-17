@@ -1,0 +1,13 @@
+# Ignore all files
+*
+
+# But don't ignore .gitignore itself
+!.gitignore
+
+# Don't ignore the javascript-basics folder and its contents
+!javascript-basics/
+!javascript-basics/**
+
+# Don't ignore the classwork folder and its contents
+!classwork/
+!classwork/**
