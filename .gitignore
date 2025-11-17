@@ -11,3 +11,7 @@
 # Don't ignore the classwork folder and its contents
 !classwork/
 !classwork/**
+
+# Don't ignore the JS-ES-Features folder and its contents
+!JS-ES-Features/
+!JS-ES-Features/**
